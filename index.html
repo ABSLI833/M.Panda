@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Monalisha Panda | Financial Advisor</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -40,7 +40,64 @@ nav{
     font-size:22px;
     color:#2b2f77;
 }
+<nav style="
+position:sticky;
+top:0;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 5%;
+background:white;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+">
 
+<!-- LEFT: LOGO + NAME -->
+<div style="display:flex; align-items:center; gap:12px;">
+
+    <img src="logo.png" style="
+    height:40px;
+    object-fit:contain;
+    ">
+
+    <h2 style="
+    margin:0;
+    font-family:'Playfair Display', serif;
+    font-size:22px;
+    font-weight:600;
+    color:#2b2f77;
+    letter-spacing:0.5px;
+    ">
+    Monalisha Panda
+    </h2>
+
+</div>
+
+<!-- RIGHT: MENU -->
+<div style="display:flex; align-items:center; gap:30px; font-family:'Poppins', sans-serif;">
+
+    <a href="#services" style="text-decoration:none; color:#333; font-weight:500;">
+    Services
+    </a>
+
+    <a href="#about" style="text-decoration:none; color:#333; font-weight:500;">
+    About
+    </a>
+
+    <a href="#form" style="
+    text-decoration:none;
+    background:linear-gradient(45deg,#ffd700,#ffcc00);
+    padding:8px 20px;
+    border-radius:25px;
+    font-weight:600;
+    color:#000;
+    ">
+    Book Now
+    </a>
+
+</div>
+
+</nav>
 /* HERO */
 .hero{
     background:linear-gradient(135deg,#2b2f77,#6a1b9a);
