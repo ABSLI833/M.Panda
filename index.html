@@ -379,6 +379,105 @@ margin-top:25px;
 display:block;
 margin-left:auto;
 }
+
+/* APPOINTMENT SECTION */
+.appointment{
+padding:100px 5%;
+background:linear-gradient(135deg,#eef2ff,#f9fafc);
+text-align:center;
+}
+
+.appointment h2{
+font-size:34px;
+color:#2b2f77;
+margin-bottom:10px;
+}
+
+.appointment-sub{
+max-width:700px;
+margin:0 auto 50px;
+color:#555;
+}
+
+/* CONTAINER */
+.appointment-container{
+display:flex;
+justify-content:center;
+align-items:flex-start;
+gap:50px;
+flex-wrap:wrap;
+}
+
+/* LEFT */
+.appointment-left{
+max-width:350px;
+text-align:left;
+}
+
+.appointment-left h3{
+color:#2b2f77;
+margin-bottom:15px;
+}
+
+.appointment-left ul{
+list-style:none;
+padding:0;
+}
+
+.appointment-left li{
+margin-bottom:10px;
+font-size:15px;
+color:#444;
+}
+
+/* RIGHT (FORM) */
+.appointment-right{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+width:320px;
+}
+
+.appointment-right input,
+.appointment-right textarea{
+width:100%;
+padding:12px;
+margin-bottom:12px;
+border-radius:10px;
+border:1px solid #ccc;
+font-family:Poppins;
+}
+
+.appointment-right textarea{
+height:80px;
+resize:none;
+}
+
+.appointment-right button{
+width:100%;
+padding:14px;
+background:#ffd700;
+border:none;
+border-radius:25px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(255,215,0,0.4);
+}
+
+.appointment-right button:hover{
+background:#2b2f77;
+color:white;
+box-shadow:0 12px 30px rgba(0,0,0,0.3);
+}
+
+/* TRUST LINE */
+.trust-line{
+font-size:12px;
+margin-top:10px;
+color:#777;
+}
 </style>
 </head>
 
@@ -674,6 +773,50 @@ Expert guidance, personalized strategies, and complete financial support you can
 
 <!-- SIGNATURE IMAGE -->
 <img src="https://absli833.github.io/M.Panda/extraordinary.png" class="bm-sign-img">
+
+</div>
+
+</div>
+
+</section>
+<!-- APPOINTMENT SECTION -->
+<section class="appointment">
+
+<h2>Get Your Personalized Financial Plan – Book a Free 30-Minute Consultation</h2>
+
+<p class="appointment-sub">
+Fill in your details and get expert financial guidance tailored to your goals. 100% free consultation with quick response.
+</p>
+
+<div class="appointment-container">
+
+<!-- LEFT SIDE -->
+<div class="appointment-left">
+
+<h3>Why Book This Consultation?</h3>
+
+<ul>
+<li>✔ 100% Free Financial Consultation</li>
+<li>✔ Personalized Plan for Your Goals</li>
+<li>✔ Quick Call Back within 6 Hours</li>
+<li>✔ Safe & Secure Information</li>
+</ul>
+
+</div>
+
+<!-- RIGHT SIDE -->
+<div class="appointment-right">
+
+<input type="text" id="app-name" placeholder="Full Name">
+<input type="text" id="app-phone" placeholder="Mobile Number">
+<input type="email" id="app-email" placeholder="Email Address">
+<textarea id="app-msg" placeholder="Your Message"></textarea>
+
+<button onclick="sendAppointment()">Get My Free Plan</button>
+
+<p class="trust-line">
+✔ Your information is 100% secure | No spam. No obligations.
+</p>
 
 </div>
 
