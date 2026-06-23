@@ -246,51 +246,56 @@ color:#777;
 
 /* WHY SECTION */
 .why{
-padding:90px 5%;
+padding:100px 5%;
 text-align:center;
-background:#ffffff;
+background:linear-gradient(#ffffff,#f5f7fb);
 }
 
 .why h2{
-font-size:34px;
+font-size:36px;
 color:#2b2f77;
+margin-bottom:10px;
 }
 
 .why-sub{
-max-width:700px;
-margin:10px auto 40px;
+max-width:720px;
+margin:0 auto 50px;
 color:#555;
+font-size:15px;
+line-height:1.6;
 }
 
 /* GRID */
 .why-cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-bottom:50px;
+gap:30px;
+margin-bottom:60px;
 }
 
 .why-card{
-background:#f9fafc;
-padding:25px;
+background:white;
+padding:30px 20px;
 border-radius:20px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 transition:0.3s;
 }
 
 .why-card:hover{
-transform:translateY(-8px);
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
 .why-icon{
-font-size:24px;
+font-size:26px;
 color:#ffd700;
-margin-bottom:10px;
+margin-bottom:12px;
 }
 
 .why-card h3{
 color:#2b2f77;
-margin-bottom:10px;
+margin-bottom:8px;
+font-size:18px;
 }
 
 .why-card p{
@@ -300,7 +305,8 @@ color:#666;
 
 /* BM SECTION */
 .bm-heading{
-margin-top:40px;
+margin-top:20px;
+font-size:24px;
 color:#2b2f77;
 }
 
@@ -308,49 +314,70 @@ color:#2b2f77;
 display:flex;
 align-items:center;
 justify-content:center;
-gap:40px;
-margin-top:30px;
+gap:50px;
+margin-top:35px;
 flex-wrap:wrap;
-background:#f9fafc;
-padding:30px;
+background:white;
+padding:35px;
 border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
+/* LEFT */
 .bm-left{
 text-align:center;
 }
 
 .bm-left img{
-width:140px;
-height:140px;
+width:150px;
+height:150px;
 border-radius:50%;
 object-fit:cover;
-border:3px solid #ffd700;
+border:4px solid #ffd700;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 .bm-name{
+margin-top:12px;
 font-weight:600;
-margin-top:10px;
+color:#2b2f77;
 }
 
+.bm-role{
+font-size:13px;
+color:#777;
+}
+
+/* RIGHT */
 .bm-right{
-max-width:400px;
+max-width:420px;
 text-align:left;
+position:relative;
 }
 
 .bm-text{
 font-style:italic;
 color:#555;
-line-height:1.6;
+line-height:1.7;
+position:relative;
 }
 
-.bm-sign{
-text-align:right;
-margin-top:15px;
-font-weight:700;
-color:green;
-font-size:18px;
+/* QUOTE */
+.bm-text::before{
+content:"“";
+font-size:60px;
+color:#eee;
+position:absolute;
+left:-15px;
+top:-10px;
+}
+
+/* SIGNATURE IMAGE */
+.bm-sign-img{
+width:160px;
+margin-top:20px;
+display:block;
+margin-left:auto;
 }
 </style>
 </head>
@@ -583,67 +610,71 @@ Real experiences from clients who trusted our financial guidance
 <h2>Why Choose Monalisha Panda?</h2>
 
 <p class="why-sub">
-Expert guidance, personalized strategies, and complete financial support you can rely on.
+Expert guidance, personalized strategies, and complete financial support you can rely on for your long-term financial success.
 </p>
 
-<!-- 6 POINT GRID -->
+<!-- GRID -->
 <div class="why-cards">
 
 <div class="why-card">
 <div class="why-icon">✔</div>
 <h3>Personalized Planning</h3>
-<p>Plans tailored to your unique financial goals</p>
+<p>Customized strategies based on your financial goals</p>
 </div>
 
 <div class="why-card">
 <div class="why-icon">✔</div>
 <h3>Expert Guidance</h3>
-<p>Professional advice you can trust</p>
+<p>Professional advice backed by real experience</p>
 </div>
 
 <div class="why-card">
 <div class="why-icon">✔</div>
 <h3>Tax Optimization</h3>
-<p>Smart strategies to maximize savings</p>
+<p>Smart planning to maximize your savings</p>
 </div>
 
 <div class="why-card">
 <div class="why-icon">✔</div>
 <h3>Long-Term Support</h3>
-<p>Continuous guidance at every step</p>
+<p>Continuous support throughout your journey</p>
 </div>
 
 <div class="why-card">
 <div class="why-icon">✔</div>
 <h3>Trusted Advisor</h3>
-<p>Building long-term client relationships</p>
+<p>Focused on building long-term relationships</p>
 </div>
 
 <div class="why-card">
 <div class="why-icon">✔</div>
 <h3>Goal-Based Approach</h3>
-<p>Focused on your life and financial goals</p>
+<p>Solutions aligned with your life goals</p>
 </div>
 
 </div>
 
-<!-- BM SECTION -->
+<!-- BM HEADING -->
 <h3 class="bm-heading">A Word from Our Branch Leadership</h3>
 
+<!-- BM BOX -->
 <div class="bm-box">
 
 <div class="bm-left">
-<img src="bm.png">
+<img src="bm.png" alt="Branch Manager">
 <p class="bm-name">Amar Prasad Nayak</p>
-<span>Branch Manager – ABSLI Puri</span>
+<span class="bm-role">Branch Manager – ABSLI Puri</span>
 </div>
 
 <div class="bm-right">
+
 <p class="bm-text">
 “Monalisha Panda has consistently demonstrated professionalism and dedication in delivering financial solutions. Her client-first approach and commitment to excellence make her a trusted advisor for individuals seeking long-term financial security.”
 </p>
 
-<p class="bm-sign">Extraordinary</p>
+<!-- SIGNATURE IMAGE -->
+<img src="Extraordinary.png" class="bm-sign-img" alt="Signature">
+
 </div>
 
 </div>
