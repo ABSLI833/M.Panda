@@ -17,90 +17,178 @@ background:#f5f7fb;
 
 /* HEADER */
 nav{
-position:sticky;
-top:0;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:12px 5%;
-background:rgba(255,255,255,0.85);
+background:rgba(255,255,255,0.9);
 backdrop-filter:blur(10px);
 border-bottom:2px solid #ffd700;
 }
-.logo-box{display:flex;align-items:center;gap:10px;}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
 .logo-box img{height:40px;}
-.logo-box h2{font-family:'Playfair Display';color:#2b2f77;}
-.menu{display:flex;gap:25px;}
-.menu a{text-decoration:none;color:#333;}
-.book-btn{background:#ffd700;padding:8px 15px;border-radius:20px;}
+
+.logo-box h2{
+font-family:'Playfair Display';
+color:#2b2f77;
+margin:0;
+}
+
+.menu{
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+.book-btn{
+background:#ffd700;
+padding:8px 18px;
+border-radius:20px;
+}
 
 /* HERO */
 .hero{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:100px 5%;
+padding:110px 5%;
 background:linear-gradient(135deg,#2b2f77,#6a1b9a);
 color:white;
 }
-.hero-text{max-width:500px;}
-.hero h1{font-size:42px;}
-.hero-buttons a{
-padding:12px 20px;
-border-radius:25px;
-margin-right:10px;
-text-decoration:none;
+
+.hero-text{max-width:520px;}
+
+.hero h1{
+font-size:46px;
+line-height:1.2;
 }
-.btn1{background:#ffd700;color:#000;}
-.btn2{background:#25D366;color:white;}
-.hero img{width:350px;border-radius:20px;}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+.hero-buttons a{
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn1{
+background:#ffd700;
+color:#000;
+}
+
+.btn2{
+background:#25D366;
+color:white;
+}
+
+.hero-buttons a:hover{
+transform:translateY(-3px);
+}
+
+.hero img{
+width:380px;
+border-radius:20px;
+}
 
 /* ABOUT */
 .about{
-padding:80px 5%;
+padding:90px 5%;
 text-align:center;
-background:#fff;
+background:linear-gradient(#fff,#f5f7fb);
 }
-.about-cards{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+
+.about h2{color:#2b2f77;}
+.about-sub{max-width:700px;margin:auto;}
+
+.about-cards{
+display:flex;
+gap:25px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
 .about-card{
-width:250px;
-background:white;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-border-radius:15px;
+width:260px;
+border-radius:20px;
 overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
-.card-top{padding:30px;font-size:35px;}
+
+.card-top{
+height:120px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:40px;
+}
+
 .card1{background:#2b2f77;color:white;}
 .card2{background:#6a1b9a;color:white;}
 .card3{background:#ffd700;}
+
 .card-bottom{padding:20px;}
 
 /* SERVICES */
 .services{
-padding:80px 5%;
+padding:90px 5%;
 text-align:center;
 background:#f9fafc;
 }
+
 .services-cards{
 display:flex;
-gap:20px;
-flex-wrap:wrap;
+gap:25px;
 justify-content:center;
+flex-wrap:wrap;
+margin-top:40px;
 }
+
 .service-card{
-width:250px;
+width:260px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
 background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
-.service-card button{
-margin-top:10px;
-padding:8px 15px;
-border:none;
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.service-top{
+height:110px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
 background:#2b2f77;
 color:white;
-border-radius:20px;
+}
+
+.service-card h3{margin:15px 0;}
+.service-card p{font-size:14px;color:#666;padding:0 15px;}
+
+.service-card button{
+margin:15px;
+padding:10px 20px;
+border:none;
+border-radius:25px;
+background:#2b2f77;
+color:white;
 cursor:pointer;
 }
 
@@ -108,24 +196,41 @@ cursor:pointer;
 .popup{
 display:none;
 position:fixed;
-top:0;left:0;
-width:100%;height:100%;
+top:0;
+left:0;
+width:100%;
+height:100%;
 background:rgba(0,0,0,0.6);
 justify-content:center;
 align-items:center;
 }
+
 .popup-content{
 background:white;
-padding:20px;
-border-radius:10px;
-width:300px;
+padding:25px;
+border-radius:20px;
+width:320px;
 text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
+
 .popup-content input{
 width:100%;
-padding:10px;
-margin:5px 0;
+padding:12px;
+margin:8px 0;
+border-radius:10px;
+border:1px solid #ccc;
 }
+
+.popup-content button{
+background:#25D366;
+color:white;
+padding:12px;
+border:none;
+border-radius:25px;
+width:100%;
+}
+
 </style>
 </head>
 
@@ -138,9 +243,9 @@ margin:5px 0;
 <h2>Monalisha Panda</h2>
 </div>
 <div class="menu">
-<a href="#">Services</a>
-<a href="#">About</a>
-<a href="#" class="book-btn">Book Now</a>
+<a>Services</a>
+<a>About</a>
+<a class="book-btn">Book Now</a>
 </div>
 </nav>
 
@@ -149,8 +254,8 @@ margin:5px 0;
 <div class="hero-text">
 <h1>Secure Your Future with Smart Financial Planning</h1>
 <div class="hero-buttons">
-<a href="#" class="btn1">Book Appointment</a>
-<a href="#" class="btn2">WhatsApp</a>
+<a class="btn1">Book Appointment</a>
+<a class="btn2">WhatsApp</a>
 </div>
 </div>
 <img src="mphoto.png">
@@ -159,15 +264,19 @@ margin:5px 0;
 <!-- ABOUT -->
 <section class="about">
 <h2>Know Your Advisor</h2>
+<p class="about-sub">Helping families achieve financial security with smart planning.</p>
+
 <div class="about-cards">
 <div class="about-card">
 <div class="card-top card1">📈</div>
 <div class="card-bottom">2+ Years Experience</div>
 </div>
+
 <div class="about-card">
 <div class="card-top card2">🏆</div>
 <div class="card-bottom">MRA Advisor</div>
 </div>
+
 <div class="about-card">
 <div class="card-top card3">🤝</div>
 <div class="card-bottom">Trusted by Clients</div>
@@ -182,14 +291,16 @@ margin:5px 0;
 <div class="services-cards">
 
 <div class="service-card">
-📈
+<div class="service-top">📈</div>
 <h3>Retirement Planning</h3>
+<p>Secure your future income</p>
 <button onclick="openForm('Retirement')">Plan My Retirement</button>
 </div>
 
 <div class="service-card">
-🎓
-<h3>Child Education</h3>
+<div class="service-top">🎓</div>
+<h3>Child Planning</h3>
+<p>Secure your child future</p>
 <button onclick="openForm('Child')">Plan Child Future</button>
 </div>
 
@@ -200,6 +311,7 @@ margin:5px 0;
 <div id="popupForm" class="popup">
 <div class="popup-content">
 <h3>Get Your Plan</h3>
+
 <input id="name" placeholder="Name">
 <input id="phone" placeholder="WhatsApp">
 <input id="age" placeholder="Age">
