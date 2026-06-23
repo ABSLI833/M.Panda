@@ -3,287 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Monalisha Panda | Financial Advisor</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<title>Monalisha Panda</title>
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins;}
-body{background:#f5f7fb;}
+body{
+margin:0;
+font-family:Poppins;
+}
 
 /* HEADER */
 nav{
-position:sticky;top:0;z-index:1000;
-display:flex;justify-content:space-between;align-items:center;
-padding:15px 5%;
-background:rgba(255,255,255,0.8);
-backdrop-filter:blur(10px);
-box-shadow:0 4px 20px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 5%;
+background:rgba(255,255,255,0.85);
+backdrop-filter:blur(12px);
+border-bottom:2px solid #ffd700;
 }
-.logo-box{display:flex;align-items:center;gap:10px;}
+
+/* LEFT */
+.logo-box{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-box img{
+height:40px;
+display:block;
+}
+
 .logo-box h2{
-font-family:'Playfair Display';
+font-family:'Playfair Display', serif;
+font-size:26px;
 color:#2b2f77;
+margin:0;
+line-height:1;
 }
-.menu{display:flex;gap:25px;align-items:center;}
-.menu a{text-decoration:none;color:#333;font-weight:500;}
+
+/* RIGHT MENU */
+.menu{
+display:flex;
+align-items:center;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
 .book-btn{
 background:linear-gradient(45deg,#ffd700,#ffcc00);
-padding:8px 18px;border-radius:20px;font-weight:600;
-}
-
-/* HERO */
-.hero{
-background:linear-gradient(135deg,#2b2f77,#6a1b9a);
-color:white;padding:100px 5%;
-display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;
-}
-.hero-text{max-width:550px;}
-.hero h1{font-size:42px;margin-bottom:20px;}
-.hero p{margin-bottom:25px;}
-.btn{
-padding:12px 25px;border-radius:30px;text-decoration:none;
-font-weight:600;margin-right:10px;
-}
-.btn-primary{background:#ffd700;color:#000;}
-.btn-whatsapp{background:#25D366;color:#fff;}
-.hero img{
-width:320px;border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.3);
-}
-
-/* SECTION */
-section{padding:80px 5%;}
-h2{text-align:center;margin-bottom:40px;}
-
-/* SERVICES */
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-.card{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-transition:0.3s;
-text-align:center;
-}
-.card:hover{transform:translateY(-8px);}
-.card h3{margin-bottom:10px;}
-.card p{font-size:14px;color:#666;margin-bottom:15px;}
-.card button{
-background:#2b2f77;
-color:white;
-border:none;
-padding:8px 15px;
-border-radius:20px;
-cursor:pointer;
-}
-
-/* WHY */
-.why{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-text-align:center;
-}
-.why div{
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* TESTIMONIAL */
-.testimonial{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-.testimonial div{
-background:white;
-padding:20px;
-border-radius:15px;
-}
-
-/* FORM */
-form{
-max-width:600px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-input,textarea{
-padding:12px;border-radius:10px;border:1px solid #ccc;
-}
-form button{
-background:#25D366;color:white;border:none;
-padding:12px;border-radius:25px;font-size:16px;
-}
-
-/* FOOTER */
-footer{
-background:#2b2f77;
-color:white;
-text-align:center;
-padding:40px 5%;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-.hero{flex-direction:column;text-align:center;}
+padding:10px 20px;
+border-radius:25px;
+font-weight:600;
+color:#000;
 }
 </style>
+
 </head>
 
 <body>
 
 <!-- HEADER -->
 <nav>
+
 <div class="logo-box">
-<img src="logo.png" height="40">
+<img src="logo.png">
 <h2>Monalisha Panda</h2>
 </div>
 
 <div class="menu">
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#form" class="book-btn">Book Now</a>
+<a href="#">Services</a>
+<a href="#">About</a>
+<a href="#" class="book-btn">Book Now</a>
 </div>
+
 </nav>
-
-<!-- HERO -->
-<section class="hero">
-<div class="hero-text">
-<h1>Secure Your Future with Expert Financial Planning</h1>
-<p>Trusted Financial Advisor helping you grow wealth, save taxes & secure your family.</p>
-
-<a href="#form" class="btn btn-primary">Book Appointment</a>
-<a href="https://wa.me/919337208017" class="btn btn-whatsapp">WhatsApp Now</a>
-</div>
-
-<img src="PHOTO.jpg">
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-<h2>About Advisor</h2>
-<p style="text-align:center; max-width:700px; margin:auto;">
-Monalisha Panda is a dedicated Financial Advisor with 2 years of experience.  
-Recognized as an <strong>MRA Advisor</strong>, she helps clients achieve financial security and growth.
-</p>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-<h2>Our Services</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>📈 Retirement Planning</h3>
-<p>Secure your future income and lifestyle.</p>
-<button>Know More</button>
-</div>
-
-<div class="card">
-<h3>🎓 Child Education</h3>
-<p>Plan your child’s bright future.</p>
-<button>Know More</button>
-</div>
-
-<div class="card">
-<h3>💰 Tax Saving</h3>
-<p>Save more with smart tax strategies.</p>
-<button>Know More</button>
-</div>
-
-<div class="card">
-<h3>📊 Wealth Creation</h3>
-<p>Grow your money effectively.</p>
-<button>Know More</button>
-</div>
-
-<div class="card">
-<h3>🛡 Insurance Protection</h3>
-<p>Protect your family financially.</p>
-<button>Know More</button>
-</div>
-
-<div class="card">
-<h3>🌍 NRI Planning</h3>
-<p>Smart financial planning for NRIs.</p>
-<button>Know More</button>
-</div>
-
-</div>
-</section>
-
-<!-- WHY -->
-<section>
-<h2>Why Choose Us</h2>
-
-<div class="why">
-<div>✔ Trusted Advisor</div>
-<div>✔ Personalized Plans</div>
-<div>✔ Quick Support</div>
-<div>✔ Long-Term Growth</div>
-</div>
-</section>
-
-<!-- TESTIMONIAL -->
-<section>
-<h2>Client Testimonials</h2>
-
-<div class="testimonial">
-<div>Excellent service and guidance!</div>
-<div>Highly professional advisor.</div>
-<div>Very helpful and trusted.</div>
-<div>Best financial planning support.</div>
-</div>
-</section>
-
-<!-- FORM -->
-<section id="form">
-<h2>Book Appointment</h2>
-
-<form onsubmit="sendWhatsApp(); return false;">
-<input type="text" id="name" placeholder="Your Name" required>
-<input type="text" id="mobile" placeholder="Mobile Number" required>
-<input type="email" id="email" placeholder="Email" required>
-<textarea id="message" placeholder="Message"></textarea>
-
-<button type="submit">Submit on WhatsApp</button>
-</form>
-</section>
-
-<!-- FOOTER -->
-<footer>
-<p><strong>Monalisha Panda</strong> | Financial Advisor</p>
-<p>📞 9337208017 | ✉️ monalishapanda347@gmail.com</p>
-<p>Bhubaneswar | Branch: Puri (093)</p>
-<p style="margin-top:10px;">© 2026 All Rights Reserved</p>
-</footer>
-
-<script>
-function sendWhatsApp(){
-let name=document.getElementById("name").value;
-let mobile=document.getElementById("mobile").value;
-let email=document.getElementById("email").value;
-let message=document.getElementById("message").value;
-
-let url="https://wa.me/919337208017?text="
-+"Name: "+name+"%0a"
-+"Mobile: "+mobile+"%0a"
-+"Email: "+email+"%0a"
-+"Message: "+message;
-
-window.open(url,'_blank');
-}
-</script>
 
 </body>
 </html>
