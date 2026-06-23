@@ -170,6 +170,79 @@ background:#25D366;color:white;padding:12px;
 border:none;border-radius:25px;width:100%;
 margin-top:10px;
 }
+
+/* TESTIMONIALS */
+.testimonials{
+padding:90px 5%;
+text-align:center;
+background:linear-gradient(#ffffff,#f5f7fb);
+}
+
+.testimonials h2{
+font-size:34px;
+color:#2b2f77;
+}
+
+.testimonials-sub{
+max-width:700px;
+margin:10px auto 40px;
+color:#555;
+}
+
+/* GRID */
+.testimonial-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* CARD */
+.testimonial-card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+position:relative;
+transition:0.3s;
+}
+
+.testimonial-card:hover{
+transform:translateY(-8px);
+}
+
+/* QUOTE ICON */
+.testimonial-card::before{
+content:"“";
+font-size:60px;
+position:absolute;
+top:10px;
+left:15px;
+color:#eee;
+}
+
+/* STARS */
+.stars{
+color:#ffd700;
+font-size:18px;
+margin-bottom:10px;
+}
+
+/* TEXT */
+.testimonial-card p{
+font-size:14px;
+color:#555;
+margin-bottom:15px;
+}
+
+.testimonial-card h4{
+margin:5px 0;
+color:#2b2f77;
+}
+
+.testimonial-card span{
+font-size:13px;
+color:#777;
+}
 </style>
 </head>
 
@@ -339,3 +412,59 @@ closeForm();
 
 </body>
 </html>
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+
+<h2>What Our Clients Say</h2>
+
+<p class="testimonials-sub">
+Real experiences from clients who trusted our financial guidance
+</p>
+
+<div class="testimonial-cards">
+
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<p>"Excellent guidance! My financial planning is now clear and structured."</p>
+<h4>Rohit Sharma</h4>
+<span>Business Owner</span>
+</div>
+
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<p>"Highly professional advisor. Helped me save taxes effectively."</p>
+<h4>Anjali Mohapatra</h4>
+<span>Salaried Professional</span>
+</div>
+
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<p>"Very supportive and trustworthy. Explained everything clearly."</p>
+<h4>Dr. Amit Patel</h4>
+<span>Doctor</span>
+</div>
+
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<p>"Best financial planning experience I’ve had so far."</p>
+<h4>Neha Mishra</h4>
+<span>Entrepreneur</span>
+</div>
+
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<p>"Great experience. I feel confident about my future now."</p>
+<h4>Rahul Das</h4>
+<span>IT Professional</span>
+</div>
+
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<p>"Highly recommended for anyone serious about wealth creation."</p>
+<h4>Sneha Iyer</h4>
+<span>NRI Client</span>
+</div>
+
+</div>
+
+</section>
