@@ -7,7 +7,7 @@
 <title>Monalisha Panda</title>
 
 <!-- FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 <style>
 body{
@@ -71,7 +71,7 @@ color:#000;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:90px 5%;
+padding:110px 5%; /* FIXED spacing */
 background:linear-gradient(135deg,#2b2f77,#6a1b9a);
 color:white;
 gap:40px;
@@ -79,40 +79,61 @@ gap:40px;
 
 .hero-text{
 flex:1;
+max-width:520px; /* FIXED width */
 }
 
 .hero h1{
-font-size:44px;
+font-size:46px;
+line-height:1.2;
+font-weight:700;
 margin-bottom:20px;
 }
 
 .hero p{
 margin-bottom:25px;
+opacity:0.9;
 }
 
+/* BUTTONS */
 .hero-buttons{
 display:flex;
-gap:15px;
+gap:20px; /* FIXED spacing */
+margin-top:10px;
 }
 
+.btn-primary,
+.btn-whatsapp{
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s ease;
+box-shadow:0 8px 20px rgba(0,0,0,0.2); /* SHADOW */
+}
+
+/* PRIMARY BUTTON */
 .btn-primary{
 background:#ffd700;
 color:#000;
-padding:12px 25px;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
 }
 
+.btn-primary:hover{
+transform:translateY(-3px);
+box-shadow:0 12px 25px rgba(255,215,0,0.5);
+}
+
+/* WHATSAPP BUTTON */
 .btn-whatsapp{
 background:#25D366;
 color:white;
-padding:12px 25px;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
 }
 
+.btn-whatsapp:hover{
+transform:translateY(-3px);
+box-shadow:0 12px 25px rgba(37,211,102,0.5);
+}
+
+/* IMAGE */
 .hero-image{
 flex:1;
 text-align:right;
@@ -121,7 +142,8 @@ text-align:right;
 .hero-image img{
 width:380px;
 border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,0.4);
+box-shadow:0 20px 50px rgba(0,0,0,0.4);
+border:3px solid rgba(255,255,255,0.15);
 }
 
 /* MOBILE */
