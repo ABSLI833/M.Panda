@@ -765,19 +765,49 @@ font-size:14px;
 position:fixed;
 bottom:20px;
 right:20px;
+width:60px;
+height:60px;
 background:#25d366;
-color:white;
-font-size:24px;
-padding:12px 16px;
 border-radius:50%;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
 z-index:999;
-text-decoration:none;
+animation:pulse 2s infinite;
+transition:0.3s;
+}
+
+.whatsapp-float img{
+width:30px;
+height:30px;
+}
+
+/* HOVER */
+.whatsapp-float:hover{
+transform:scale(1.1);
+box-shadow:0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* PULSE ANIMATION */
+@keyframes pulse{
+0%{
+box-shadow:0 0 0 0 rgba(37,211,102,0.7);
+}
+70%{
+box-shadow:0 0 0 15px rgba(37,211,102,0);
+}
+100%{
+box-shadow:0 0 0 0 rgba(37,211,102,0);
+}
 }
 </style>
 </head>
-<a href="https://wa.me/919337208017" class="whatsapp-float" target="_blank">
-💬
+<a href="https://wa.me/919337208017?text=Hi,%20I%20want%20financial%20planning%20consultation" 
+class="whatsapp-float" target="_blank">
+
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+
 </a>
 <body>
 
