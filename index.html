@@ -622,48 +622,61 @@ color:#555;
     padding:30px;
 
 }
-    /*=========================
-      PREMIUM ICON
+  /*=========================
+      APPOINTMENT ICON
 =========================*/
 
 .appointment-icon{
 
-    width:130px;
+    width:150px;
 
-    height:130px;
+    height:150px;
+
+    margin:0 auto 15px;
 
     border-radius:50%;
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
 
-    background:#fff;
+    align-items:center;
+
+    background:#ffffff;
 
     border:3px solid transparent;
 
     background-image:
-        linear-gradient(#fff,#fff),
+        linear-gradient(#ffffff,#ffffff),
         linear-gradient(135deg,#D62D2D,#F4B400,#D62D2D);
 
     background-origin:border-box;
 
     background-clip:padding-box,border-box;
 
-    box-shadow:0 12px 35px rgba(244,180,0,.18);
+    box-shadow:
+        0 12px 30px rgba(244,180,0,.20);
 
     overflow:hidden;
 
 }
-    .appointment-icon img{
+   .appointment-icon img{
 
-    width:82%;
+    width:100%;
 
-    height:82%;
+    height:100%;
 
-    object-fit:contain;
+    object-fit:cover;
+
+    border-radius:50%;
+
+    transition:.35s;
+
+}
+
+.appointment-icon:hover img{
+
+    transform:scale(1.05);
 
 }
 
@@ -1418,9 +1431,9 @@ Expert guidance, personalized strategies, and complete financial support you can
 
             <!-- Premium Icon -->
 
-            <div class="appointment-icon">
+           <div class="appointment-icon">
 
-    <img src="appointment.png" alt="Book Consultation">
+    <img src="appnt.png" alt="Book Consultation">
 
 </div>
 
