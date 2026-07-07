@@ -591,11 +591,17 @@ color:#555;
 
 /* CONTAINER */
 .appointment-container{
-display:flex;
-justify-content:center;
-align-items:flex-start;
-gap:50px;
-flex-wrap:wrap;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:stretch;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
 }
 
 /* LEFT */
@@ -607,11 +613,13 @@ flex-wrap:wrap;
 
     flex-direction:column;
 
-    align-items:center;
-
     justify-content:center;
 
+    align-items:center;
+
     text-align:center;
+
+    padding:30px;
 
 }
     /*=========================
@@ -632,10 +640,6 @@ flex-wrap:wrap;
 
     justify-content:center;
 
-    font-size:56px;
-
-    color:#2B2F77;
-
     background:#fff;
 
     border:3px solid transparent;
@@ -650,7 +654,16 @@ flex-wrap:wrap;
 
     box-shadow:0 12px 35px rgba(244,180,0,.18);
 
-    margin-bottom:28px;
+    overflow:hidden;
+
+}
+    .appointment-icon img{
+
+    width:82%;
+
+    height:82%;
+
+    object-fit:contain;
 
 }
 
@@ -660,14 +673,45 @@ margin-bottom:15px;
 }
 
 .appointment-left ul{
-list-style:none;
-padding:0;
+
+    list-style:none;
+
+    padding:0;
+
+    margin:25px 0 0;
+
+    width:100%;
+
 }
 
 .appointment-left li{
-margin-bottom:10px;
-font-size:15px;
-color:#444;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px 0;
+
+    font-size:17px;
+
+    color:#333;
+
+    text-align:left;
+
+}
+
+.appointment-left li i{
+
+    color:#2B2F77;
+
+    width:24px;
+
+    min-width:24px;
+
+    text-align:center;
+
 }
 
 /* RIGHT (FORM) */
@@ -1319,8 +1363,9 @@ Expert guidance, personalized strategies, and complete financial support you can
 
             <div class="appointment-icon">
 
-                <i class="fa-solid fa-shield-halved"></i>
-            </div>
+    <img src="appointment.png" alt="Book Consultation">
+
+</div>
 
             <h3>
 
