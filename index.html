@@ -684,6 +684,50 @@ color:#555;
     letter-spacing:-0.5px;
 
 }
+    /*=========================
+    PREMIUM DIVIDER
+=========================*/
+
+.appointment-divider{
+
+    width:180px;
+
+    height:4px;
+
+    margin:22px auto 35px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #D62D2D 0%,
+        #F4B400 50%,
+        #D62D2D 100%
+    );
+
+    background-size:200%;
+
+    animation:dividerGlow 4s linear infinite;
+
+    box-shadow:
+        0 0 12px rgba(244,180,0,.35);
+
+}
+    @keyframes dividerGlow{
+
+    from{
+
+        background-position:0%;
+
+    }
+
+    to{
+
+        background-position:200%;
+
+    }
+
+}
 
 .appointment-left ul{
 
@@ -1388,15 +1432,7 @@ Expert guidance, personalized strategies, and complete financial support you can
 
             <!-- Decorative Divider -->
 
-            <div class="appointment-divider">
-
-                <span></span>
-
-                <i class="fa-solid fa-star"></i>
-
-                <span></span>
-
-            </div>
+            <div class="appointment-divider"></div>
 
             <ul>
 
